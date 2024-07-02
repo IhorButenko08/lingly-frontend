@@ -20,15 +20,29 @@ const config: Config = {
         "Placeholder/Subcolor": "#CDECF2",
         "Text/Subcolor": "#3CB4CA",
         "Main/Background": "#1e1e1e",
+        // Background colors ---------------------------
+        "Background/Primary": "#121212",
+        "Background/Element": "#1B1B1B",
+        // Text colors ---------------------------------
+        "Text/Primary/Black": "#121212",
+        "Text/Primary/Grey": "#7A7A7A",
+        "Text/Primary/White": "#FFFFFF",
       },
       fontSize: {
         "header": "3rem",
+        "button": "1rem",
         "header/sm" : "2rem",
         "main": "1.5rem",
+        // Overview page --------------------------------
+        "Overview/header": "5rem",
+        "Overview/sub-header": "1.5rem",
       },
       fontFamily: {
         gilory: ["Gilory", "sans-serif"],
       },
+      borderRadius: {
+        "Primary" : "24px"
+      }
     },
   },
   plugins: [],

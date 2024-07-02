@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import socket, { writeSessionRequest } from "@/api/set/learning/learning";
 import WritingSection from "../components/writingSection";
 import { useSearchParams } from "next/navigation";
+import Overview from "../components/overview";
 
 interface Response {
   termsLeft: any[];
@@ -47,8 +48,7 @@ export default function Writing() {
       />
     );
   } else if (response.termsLeft.length === 0) {
-    console.log(response);
-    return <h1>Complete!</h1>;
+    return <Overview />
   } else {
     return <h1>No response ._.</h1>;
   }
